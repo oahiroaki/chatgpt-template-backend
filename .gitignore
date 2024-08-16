@@ -1,4 +1,9 @@
+# 環境変数
+.env
+
 venv/
+
+__pycache__/
 
 General
 .DS_Store

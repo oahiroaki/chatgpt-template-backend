@@ -6,8 +6,7 @@ brew install python3 sqlite
 ```
 cd chatgpt-template-backend
 python3 -m venv venv
-source venv/bin/activate
-pip install fastapi uvicorn 
+source setup.sh
 ```
 
 ## インタープリタ選択
