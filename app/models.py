@@ -47,7 +47,7 @@ class ChatCompletionParamter(BaseModel):
 
     frequency_penalty: float | None = None
 
-    logit_bias: Any
+    logit_bias: List | None = None
 
     logprobs: bool | None = False
     """Optional

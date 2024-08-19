@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from openai.types.chat import ChatCompletionMessageParam, ChatCompletion
 
-from .models import ChatCompletionParamter
+from models import ChatCompletionParamter
 
 load_dotenv()
 CHATGPT_API_KEY = os.environ["CHATGPT_API_KEY"]
@@ -25,7 +25,7 @@ def chat_completions(parameter: ChatCompletionParamter):
             messages.append({"role": "assistant", "content": message.content})
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model=parameter.model,
         messages=messages
     )
 
